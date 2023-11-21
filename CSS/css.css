@@ -1,0 +1,42 @@
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.mySlides img {
+    width: 100%;
+    height: auto;
+}
+
+.text {
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+}
+.button-style {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff4c4c;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button-style:hover {
+    background-color: #922b2a;
+}

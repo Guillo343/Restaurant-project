@@ -1,29 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="CSS/css.css">
     <link href="./tailwindstyle.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Project</title>
 </head>
 <body>
-    <!-- Nav Bar -->
-    <nav class="bg-red-500 #D9534F p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <!-- Logo -->
-            <a href="#" class="text-white text-2xl font-bold">Restaurant Name</a>
-
-            <!-- Navigation Links -->
-            <div class="flex space-x-4">
-                <a href="#" class="text-white hover:text-gray-300 transition hover:underline duration-300 ease-in-out">Home</a>
-                <a href="#" class="text-white hover:text-gray-300 transition hover:underline duration-300 ease-in-out">Menu</a>
-                <a href="#" class="text-white hover:text-gray-300 transition hover:underline duration-300 ease-in-out">About Us</a>
-                <a href="#" class="text-white hover:text-gray-300 transition hover:underline duration-300 ease-in-out">Contact</a>
-            </div>
-        </div>
-    </nav>
-
-
     
+    <!-- Nav Bar -->
+    <header>
+        <nav class="bg-red-500 #D9534F p-4">
+            <div class="container mx-auto flex justify-between items-center">
+                <!-- Logo -->
+                <a href="#" class="text-white text-2xl font-bold">Restaurant Name</a>
+                <!-- Navigation Links -->
+                <div class="flex space-x-4">
+                    <a href="#" class="text-white hover:text-gray-300 transition hover:underline duration-300 ease-in-out">Home</a>
+                    <a href="#" class="text-white hover:text-gray-300 transition hover:underline duration-300 ease-in-out">Menu</a>
+                    <a href="#" class="text-white hover:text-gray-300 transition hover:underline duration-300 ease-in-out">About Us</a>
+                    <a href="#" class="text-white hover:text-gray-300 transition hover:underline duration-300 ease-in-out">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+        <!-- Your navigation bar goes here (use the code from the previous example) -->
+
+        <section class="mt-8">
+            <div class="slideshow-container mx-auto">
+                <div class="mySlides">
+                    <video autoplay muted loop playsinline>
+                        <source src="videos/RestaurantVideo1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="text"><a href="#" class="">Click here to know more about us</a></div>
+                </div>
+                <div class="mySlides">
+                    <video autoplay muted loop playsinline>
+                        <source src="videos/RestaurantVideo2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="text"><a href="#" class="button-style">Click here to check the Menu</a></div>
+                </div>
+                <div class="mySlides">
+                    <video autoplay muted loop playsinline>
+                        <source src="videos/RestaurantVideo3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="text"><a href="#" class="button-style"> Click here to Contact Us</a></div>
+                </div>
+            </div>
+        </section>
+    
+
+
+<script src="Javascript.js"></script>
 </body>
 </html>

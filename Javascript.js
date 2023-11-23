@@ -1,4 +1,4 @@
-  // JavaScript for slideshow
+  // Slideshow
   let slideIndex = 0;
 
   function showSlides() {

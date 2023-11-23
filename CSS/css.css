@@ -16,7 +16,33 @@
     width: 100%;
     height: auto;
 }
-
+.underlineLink {
+    text-decoration: none;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+    transition: color 0.9s;
+}
+.underlineLink:after{
+content:"";
+position: absolute;
+background-color: #fff;
+height: 3px;
+width: 0;
+left: 0;
+bottom: -10px;
+transition: width 0.3s;
+}
+.underlineLink:hover {
+    color: #fff;
+    font-weight: bold;
+}
+.underlineLink:hover:after{
+width: 100%;
+}
 .text {
     color: #fff;
     font-size: 20px;
@@ -31,7 +57,7 @@
     display: inline-block;
     padding: 10px 20px;
     background-color: #ff4c4c;
-    color: #fff;
+    color: rgb(219, 219, 219);
     text-decoration: none;
     font-size: 18px;
     border-radius: 5px;
@@ -40,19 +66,5 @@
 
 .button-style:hover {
     background-color: #922b2a;
-}
-.cards-button-style {
-    display: inline-block;
-    padding: 10px 20px;
-    background: linear-gradient(to right, #4CAF50, #45a049);
     color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.cards-button-style:hover {
-    background: linear-gradient(to right, #45a049, #4CAF50);
-    transition: background-color .3s;
 }

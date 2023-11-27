@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "tailwindcss": "^3.3.5"
+  },
+  "dependencies": {
+    "@googlemaps/js-api-loader": "^1.16.2"
   }
 }

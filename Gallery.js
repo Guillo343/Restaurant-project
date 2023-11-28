@@ -1,11 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
-    lightGallery(document.getElementById('lightgallery'));
-});
+    var lightGalleryInstance = lightGallery(document.getElementById('lightgallery'));
 
-function openModal(imageSrc) {
-    // Display the lightgallery modal
-    lightGallery(document.getElementById('lightgallery'), {
-        dynamic: true,
-        dynamicEl: [{ src: imageSrc }],
+    // Override lightgallery's close method to handle clicks outside the image
+    lightGalleryInstance.closeGallery = function () {
+        lightGalleryInstance.destroy(true);
+    };
+
+    // Add a click event listener to close the lightgallery modal when clicking outside the image
+    document.addEventListener('click', function (event) {
+        if (!event.target.closest('.lg-item')) {
+            lightGalleryInstance.closeGallery();
+        }
     });
-}
+});

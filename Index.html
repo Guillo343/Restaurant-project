@@ -34,21 +34,21 @@
                         <source src="videos/RestaurantVideo1.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <div class="text"><a href="#" class="button-style">Click here to know more about us</a></div>
+                    <div class="text"><a href="/Pages/about-us.html" class="button-style">Click here to know more about us</a></div>
                 </div>
                 <div class="mySlides">
                     <video autoplay muted loop playsinline>
                         <source src="videos/RestaurantVideo2.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <div class="text"><a href="#" class="button-style">Click here to check the Menu</a></div>
+                    <div class="text"><a href="/Pages/menu.html" class="button-style">Click here to check the Menu</a></div>
                 </div>
                 <div class="mySlides">
                     <video autoplay muted loop playsinline>
                         <source src="videos/RestaurantVideo3.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <div class="text"><a href="#" class="button-style"> Click here to Contact Us</a></div>
+                    <div class="text"><a href="/Pages/contact-us.html" class="button-style"> Click here to Contact Us</a></div>
                 </div>
             </div>
         </section>
@@ -63,20 +63,37 @@
                     <div class="p-4">
                         <p class="text-gray-800 font-semibold">Menu</p>
                         <p class="text-gray-600 mt-2">Click here to see our Menu</p>
-                        <a href="#" class="button-style mt-4 text-white py-2 px-4 rounded-md inline-block">Menu</a>
+                        <a href="/Pages/menu.html" class="button-style mt-4 text-white py-2 px-4 rounded-md inline-block">Menu</a>
                     </div>
                 </div>
         
                 <!-- Card 2 -->
-                <div class="max-w-xs bg-white rounded-lg overflow-hidden shadow-md">
+                <div class="max-w-xs bg-white rounded-lg overflow-hidden shadow-md gallery-item" onclick="showGallery()">
                     <img src="videos/RestaurantImg2.jpg" alt="Card 2" class="w-full h-48 object-cover">
                     <div class="p-4">
                         <p class="text-gray-800 font-semibold">Gallery</p>
                         <p class="text-gray-600 mt-2">Photos and videos</p>
-                        <a href="#" class="button-style mt-4 text-white py-2 px-4 rounded-md inline-block">Click here to watch it</a>
+                        <a href="#" class="button-style mt-4 text-white py-2 px-4 rounded-md inline-block">Click here to see the gallery</a>
                     </div>
                 </div>
-        
+                <div class="gallery-container">
+                    <!-- Add more gallery items here -->
+                    <div class="max-w-xs bg-white rounded-lg overflow-hidden shadow-md gallery-item">
+                        <img src="videos/RestaurantArg1.jpg" alt="Photo 1" class="w-full h-48 object-cover" onclick="openModal('videos/Photo1.jpg')">
+                    </div>
+                    <div class="max-w-xs bg-white rounded-lg overflow-hidden shadow-md gallery-item">
+                        <img src="videos/RestaurantArg2.jpg" alt="Photo 2" class="w-full h-48 object-cover" onclick="openModal('videos/Photo2.jpg')">
+                    </div>
+                    <!-- Add more gallery items here -->
+                </div>
+                
+                <div id="myModal" class="modal">
+                    <span class="close-btn" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                        <img id="modalImage" src="" alt="Modal Image" style="width: 100%; height: 100%;">
+                    </div>
+                </div>
+
                 <!-- Card 3 -->
                 <div class="max-w-xs bg-white rounded-lg overflow-hidden shadow-md">
                     <img src="videos/RestaurantImg3.jpg" alt="Card 3" class="w-full h-48 object-cover">
@@ -114,5 +131,6 @@
 
 
 <script src="Javascript.js"></script>
+<script src="Gallery.js"></script>
 </body>
 </html>

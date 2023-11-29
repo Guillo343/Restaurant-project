@@ -15,72 +15,86 @@
             <!-- Logo -->
             <a href="/Index.html" class="text-white text-2xl font-bold">Aroma de Hogar</a>
             <!-- Navigation Links -->
-            <div class="flex space-x-4 px-16">
+            <div class="hidden md:flex space-x-4 px-16 nav-links">
                 <a href="/Index.html" class="underlineLink">Home</a>
                 <a href="/Pages/menu.html" class="underlineLink">Menu</a>
                 <a href="/Pages/about-us.html" class="underlineLink">About Us</a>
                 <a href="/Pages/contact-us.html" class="underlineLink">Contact</a>
             </div>
+
+            <!-- Responsive Menu Button for Small Screens -->
+            <button class="md:hidden focus:outline-none" id="toggleBtn">
+                <svg class="text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path d="M4 6h16M4 12h16m-7 6h7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
         </div>
     </nav>
 </header>
 <body>
-    <div id="lightgallery" class="gallery-container">
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+    <div id="lightgallery myModal" class="gallery-container">
         <!-- Gallery items -->
         <a href="/videos/RestaurantArg1.jpg" class="gallery-item" data-lg-size="1600-1067">
-            <img src="/videos/RestaurantArg1.jpg" alt="Image 1" class="w-full h-48 object-cover"> 
+            <img src="/videos/RestaurantArg1.jpg" alt="Image 1" class="w-full h-48 object-cover gallery-img" onclick="openModal(this)">
         </a>
         <a href="/videos/RestaurantArg2.jpg" class="gallery-item" data-lg-size="1600-1067">
-            <img src="/videos/RestaurantArg2.jpg" alt="Image 2" class="w-full h-48 object-cover">
+            <img src="/videos/RestaurantArg2.jpg" alt="Image 2" class="w-full h-48 object-cover gallery-img" onclick="openModal(this)">
         </a>
         <a href="/videos/RestaurantUru1.jpg" class="gallery-item" data-lg-size="1600-1067">
-            <img src="/videos/RestaurantUru1.jpg" alt="Image 3" class="w-full h-48 object-cover">
+            <img src="/videos/RestaurantUru1.jpg" alt="Image 3" class="w-full h-48 object-cover gallery-img" onclick="openModal(this)">
         </a>
         <a href="/videos/RestaurantUru2.jpg" class="gallery-item" data-lg-size="1600-1067">
-            <img src="/videos/RestaurantUru2.jpg" alt="Image 4" class="w-full h-48 object-cover">
+            <img src="/videos/RestaurantUru2.jpg" alt="Image 4" class="w-full h-48 object-cover gallery-img" onclick="openModal(this)">
         </a>
         <a href="/videos/RestaurantEcu1.jpg" class="gallery-item" data-lg-size="1600-1067">
-            <img src="/videos/RestaurantEcu2.jpg" alt="Image 5" class="w-full h-48 object-cover">
+            <img src="/videos/RestaurantEcu2.jpg" alt="Image 5" class="w-full h-48 object-cover gallery-img" onclick="openModal(this)">
         </a>
         <a href="/videos/RestaurantEcu2.jpg" class="gallery-item" data-lg-size="1600-1067">
-            <img src="/videos/RestaurantEcu2.jpg" alt="Image 6" class="w-full h-48 object-cover">
+            <img src="/videos/RestaurantEcu2.jpg" alt="Image 6" class="w-full h-48 object-cover gallery-img" onclick="openModal(this)">
         </a>
         <a href="/videos/RestaurantCol1.jpg" class="gallery-item" data-lg-size="1600-1067">
-            <img src="/videos/RestaurantCol1.jpg" alt="Image 7" class="w-full h-48 object-cover">
+            <img src="/videos/RestaurantCol1.jpg" alt="Image 7" class="w-full h-48 object-cover gallery-img" onclick="openModal(this)">
         </a>
         <a href="/videos/RestaurantCol2.jpg" class="gallery-item" data-lg-size="1600-1067">
-            <img src="/videos/RestaurantCol2.jpg" alt="Image 8" class="w-full h-48 object-cover">
+            <img src="/videos/RestaurantCol2.jpg" alt="Image 8" class="w-full h-48 object-cover gallery-img" onclick="openModal(this)">
         </a>
         <a href="/videos/RestaurantVen1.jpg" class="gallery-item" data-lg-size="1600-1067">
-            <img src="/videos/RestaurantVen1.jpg" alt="Image 9" class="w-full h-48 object-cover">
+            <img src="/videos/RestaurantVen1.jpg" alt="Image 9" class="w-full h-48 object-cover gallery-img" onclick="openModal(this)">
         </a>
         <a href="/videos/RestaurantVen2.jpg" class="gallery-item" data-lg-size="1600-1067">
-            <img src="/videos/RestaurantVen2.jpg" alt="Image 10" class="w-full h-48 object-cover">
+            <img src="/videos/RestaurantVen2.jpg" alt="Image 10" class="w-full h-48 object-cover gallery-img" onclick="openModal(this)">
         </a>
         <a href="/videos/RestaurantPer1.jpg" class="gallery-item" data-lg-size="1600-1067">
-            <img src="/videos/RestaurantPer1.jpg" alt="Image 11" class="w-full h-48 object-cover">
+            <img src="/videos/RestaurantPer1.jpg" alt="Image 11" class="w-full h-48 object-cover gallery-img" onclick="openModal(this)">
         </a>
         <a href="/videos/RestaurantPer2.jpg" class="gallery-item" data-lg-size="1600-1067">
-            <img src="/videos/RestaurantPer2.jpg" alt="Image 12" class="w-full h-48 object-cover">
+            <img src="/videos/RestaurantPer2.jpg" alt="Image 12" class="w-full h-48 object-cover gallery-img" onclick="openModal(this)">
         </a>
         <a href="/videos/RestaurantChil1.jpg" class="gallery-item" data-lg-size="1600-1067">
-            <img src="/videos/RestaurantChil1.jpg" alt="Image 13" class="w-full h-48 object-cover">
+            <img src="/videos/RestaurantChil1.jpg" alt="Image 13" class="w-full h-48 object-cover gallery-img" onclick="openModal(this)">
         </a>
         <a href="/videos/RestaurantChil2.jpg" class="gallery-item" data-lg-size="1600-1067">
-            <img src="/videos/RestaurantChil2.jpg" alt="Image 14" class="w-full h-48 object-cover">
+            <img src="/videos/RestaurantChil2.jpg" alt="Image 14" class="w-full h-48 object-cover gallery-img" onclick="openModal(this)">
         </a>
         <a href="/videos/RestaurantPar1.jpg" class="gallery-item" data-lg-size="1600-1067">
-            <img src="/videos/RestaurantPar1.jpg" alt="Image 15" class="w-full h-48 object-cover">
+            <img src="/videos/RestaurantPar1.jpg" alt="Image 15" class="w-full h-48 object-cover gallery-img" onclick="openModal(this)">
         </a>
         <a href="/videos/RestaurantPar2.jpg" class="gallery-item" data-lg-size="1600-1067">
-            <img src="/videos/RestaurantPar2.jpg" alt="Image 16" class="w-full h-48 object-cover">
+            <img src="/videos/RestaurantPar2.jpg" alt="Image 16" class="w-full h-48 object-cover gallery-img" onclick="openModal(this)">
         </a>
        
     </div>
 
     <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
         <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="Index.html" class="hover:underline">AromaDeHogar™</a>. All Rights Reserved.
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="/Index.html" class="hover:underline">AromaDeHogar™</a>. All Rights Reserved.
         </span>
         <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
             <li>
@@ -98,12 +112,35 @@
         </ul>
         </div>
     </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lightslider@1.1.6/dist/js/lightslider.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lg-fullscreen@1.1.0/dist/lg-fullscreen.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lg-thumbnail@1.2.0/dist/lg-thumbnail.min.js"></script>
-    <script src="/Gallery.js"></script>
+    <script>
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+
+    function openModal(imgElement) {
+        modal.style.display = "flex";
+        modalImg.src = imgElement.src;
+        captionText.innerHTML = imgElement.alt;
+}
+
+    function closeModal() {
+        modal.style.display = "none";
+}
+    </script>
+    <script>
+        // JavaScript to toggle the visibility of the navigation links for small screens
+        const toggleBtn = document.getElementById('toggleBtn');
+        const navLinks = document.querySelector('.nav-links');
     
+        toggleBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
 </body>
 </html>

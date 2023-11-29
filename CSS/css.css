@@ -78,3 +78,56 @@ width: 100%;
 .gallery-item {
     cursor: pointer;
 }
+ /* Additional styles go here */
+
+ @media (max-width: 768px) {
+    /* Adjust styles for smaller screens (e.g., mobile devices) */
+    .nav-links {
+        display: none; /* Hide navigation links by default */
+        flex-direction: column;
+        position: absolute;
+        top: 4rem; /* Adjust as needed based on your header height */
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 1;
+    }
+
+    .nav-links.show {
+        display: flex; /* Show navigation links when the class "show" is added */
+    }
+
+    .underlineLink {
+        display: block;
+        padding: 1rem;
+        text-align: center;
+        color: #ff4c4c;
+    }
+}
+
+#myModal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+#myModal img {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 5px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}

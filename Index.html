@@ -14,14 +14,23 @@
         <nav class="bg-red-500 #D9534F p-4">
             <div class="container mx-auto flex justify-between items-center">
                 <!-- Logo -->
-                <a href="Index.html" class="text-white text-2xl font-bold">Aroma de Hogar</a>
+                <a href="/Index.html" class="text-white text-2xl font-bold">Aroma de Hogar</a>
                 <!-- Navigation Links -->
-                <div class="flex space-x-4 px-16">
-                    <a href="Index.html" class="underlineLink">Home</a>
+                <div class="hidden md:flex space-x-4 px-16 nav-links">
+                    <a href="/Index.html" class="underlineLink">Home</a>
                     <a href="/Pages/menu.html" class="underlineLink">Menu</a>
                     <a href="/Pages/about-us.html" class="underlineLink">About Us</a>
                     <a href="/Pages/contact-us.html" class="underlineLink">Contact</a>
                 </div>
+
+                <!-- Responsive Menu Button for Small Screens -->
+                <button class="md:hidden focus:outline-none" id="toggleBtn">
+                    <svg class="text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path d="M4 6h16M4 12h16m-7 6h7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
             </div>
         </nav>
     </header>
@@ -56,9 +65,9 @@
         <hr class="border-gray-300 my-8">
 
         <section class="mt-8">
-            <div class="container mx-auto flex justify-center space-x-8">
+            <div class="container mx-auto flex flex-col md:flex-row justify-center md:space-x-8">
                 <!-- Card 1 -->
-                <div class="max-w-xs bg-white rounded-lg overflow-hidden shadow-md">
+                <div class="max-w-xs mb-4 md:mb-0 md:w-1/3 bg-white rounded-lg overflow-hidden shadow-md">
                     <img src="videos/RestaurantImg1.jpg" alt="Card 1" class="w-full h-48 object-cover">
                     <div class="p-4">
                         <p class="text-gray-800 font-semibold">Menu</p>
@@ -66,32 +75,36 @@
                         <a href="/Pages/menu.html" class="button-style mt-4 text-white py-2 px-4 rounded-md inline-block">Menu</a>
                     </div>
                 </div>
-        
+    
                 <!-- Card 2 -->
-                <div class="max-w-xs bg-white rounded-lg overflow-hidden shadow-md gallery-item" onclick="showGallery()">
+                <div class="max-w-xs mb-4 md:mb-0 md:w-1/3 bg-white rounded-lg overflow-hidden shadow-md gallery-item"
+                    onclick="showGallery()">
                     <img src="videos/RestaurantImg2.jpg" alt="Card 2" class="w-full h-48 object-cover">
                     <div class="p-4">
                         <p class="text-gray-800 font-semibold">Gallery</p>
                         <p class="text-gray-600 mt-2">Photos and videos</p>
-                        <a href="/Pages/Gallery.html" class="button-style mt-4 text-white py-2 px-4 rounded-md inline-block">Click here to see the gallery</a>
+                        <a href="/Pages/Gallery.html"
+                            class="button-style mt-4 text-white py-2 px-4 rounded-md inline-block">Click here to see the
+                            gallery</a>
                     </div>
                 </div>
-        
+    
                 <!-- Card 3 -->
-                <div class="max-w-xs bg-white rounded-lg overflow-hidden shadow-md">
+                <div class="max-w-xs md:w-1/3 bg-white rounded-lg overflow-hidden shadow-md">
                     <img src="videos/RestaurantImg3.jpg" alt="Card 3" class="w-full h-48 object-cover">
                     <div class="p-4">
                         <p class="text-gray-800 font-semibold">Location</p>
                         <p class="text-gray-600 mt-2">Click here to see our Location</p>
-                        <a href="/Pages/location.html" class="button-style mt-4 text-white py-2 px-4 rounded-md inline-block">Location</a>
+                        <a href="/Pages/location.html"
+                            class="button-style mt-4 text-white py-2 px-4 rounded-md inline-block">Location</a>
                     </div>
                 </div>
             </div>
-        </section>        
+        </section>       
 
 <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
     <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="Index.html" class="hover:underline">AromaDeHogar™</a>. All Rights Reserved.
+      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="/Index.html" class="hover:underline">AromaDeHogar™</a>. All Rights Reserved.
     </span>
     <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
         <li>

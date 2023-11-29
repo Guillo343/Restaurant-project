@@ -14,12 +14,21 @@
                 <!-- Logo -->
                 <a href="/Index.html" class="text-white text-2xl font-bold">Aroma de Hogar</a>
                 <!-- Navigation Links -->
-                <div class="flex space-x-4 px-16">
+                <div class="hidden md:flex space-x-4 px-16 nav-links">
                     <a href="/Index.html" class="underlineLink">Home</a>
                     <a href="/Pages/menu.html" class="underlineLink">Menu</a>
                     <a href="/Pages/about-us.html" class="underlineLink">About Us</a>
                     <a href="/Pages/contact-us.html" class="underlineLink">Contact</a>
                 </div>
+
+                <!-- Responsive Menu Button for Small Screens -->
+                <button class="md:hidden focus:outline-none" id="toggleBtn">
+                    <svg class="text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path d="M4 6h16M4 12h16m-7 6h7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
             </div>
         </nav>
     </header>
@@ -30,20 +39,20 @@
         <div>
             <h2 class="text-2xl font-bold mb-2">About Us</h2>
             <p class="mb-4">
-                Welcome to [Aroma de Hogar], an esteemed culinary sanctuary where the richness of South American flavors takes center stage. Our gastronomic journey spans the landscapes of Ecuador, Colombia, Venezuela, Peru, Argentina, Uruguay, Chile, and Paraguay, presenting a symphony of tastes that is both refined and authentic.
+                Welcome to <i>Aroma de Hogar</i>, an esteemed culinary sanctuary where the richness of South American flavors takes center stage. Our gastronomic journey spans the landscapes of Ecuador, Colombia, Venezuela, Peru, Argentina, Uruguay, Chile, and Paraguay, presenting a symphony of tastes that is both refined and authentic.
     
-                At [Aroma de Hogar], we transcend the ordinary, curating a dining experience that pays homage to the diversity of South American culinary traditions. Each dish is a masterpiece, meticulously crafted to evoke the essence of the region's vibrant cultural tapestry.
+                At <i>Aroma de Hogar</i>, we transcend the ordinary, curating a dining experience that pays homage to the diversity of South American culinary traditions. Each dish is a masterpiece, meticulously crafted to evoke the essence of the region's vibrant cultural tapestry.
     
                 Beyond the culinary realm, our establishment invites you to linger in our café, an intimate haven for the discerning palate. Here, the finest coffees and pastries beckon, providing a harmonious prelude or postscript to your culinary journey. For those with a penchant for exploration, our distinguished liquor store invites you to peruse an exceptional collection of South American spirits, each bottle a testament to the region's storied libations.
     
-                Elevate your senses and join us at [Aroma de Hogar], where gastronomy becomes an elevated art form. Whether you are a seasoned epicurean or a neophyte embarking on a culinary odyssey, let [Aroma de Hogar] be your passport to the sophistication of South American culture. ¡Buen provecho!
+                Elevate your senses and join us at <i>Aroma de Hogar</i>, where gastronomy becomes an elevated art form. Whether you are a seasoned epicurean or a neophyte embarking on a culinary odyssey, let <i>Aroma de Hogar</i> be your passport to the sophistication of South American culture. ¡Buen provecho!
             </p>
         </div>
     </div>
     
     <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
         <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="Index.html" class="hover:underline">AromaDeHogar™</a>. All Rights Reserved.
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="/Index.html" class="hover:underline">AromaDeHogar™</a>. All Rights Reserved.
         </span>
         <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
             <li>
@@ -61,7 +70,15 @@
         </ul>
         </div>
     </footer>
+    <script>
+        // JavaScript to toggle the visibility of the navigation links for small screens
+        const toggleBtn = document.getElementById('toggleBtn');
+        const navLinks = document.querySelector('.nav-links');
     
+        toggleBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
 
 <body>
     

@@ -17,3 +17,10 @@
 
   // Initial call to start the slideshow
   showSlides();
+    // JavaScript to toggle the visibility of the navigation links for small screens
+    const toggleBtn = document.getElementById('toggleBtn');
+    const navLinks = document.querySelector('.nav-links');
+
+    toggleBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+    });
